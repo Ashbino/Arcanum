@@ -1,0 +1,15 @@
+name: Arcanum
+version: '${version}'
+main: com.thegildedking.arcanum.Arcanum
+api-version: '1.21'
+author: TheGildedKing
+description: Mage plugin - elemental staffs, spell scrolls, spell books and mana.
+commands:
+  mage:
+    description: Arcanum main command
+    aliases: [arcanum, arcana]
+permissions:
+  arcanum.use:
+    default: true
+  arcanum.admin:
+    default: op

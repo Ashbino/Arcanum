@@ -1,0 +1,25 @@
+# ---------------- Arcanum config ----------------
+mana:
+  base: 100            # starting max mana
+  per-rank: 10         # extra max mana per mage rank
+  max-rank: 20
+  regen-per-second: 2.5
+  affinity-cost-multiplier: 0.85    # cost multiplier for spells of your own mage element
+  affinity-regen-bonus: 1.25        # regen multiplier while holding a staff of your own element
+
+choose-on-join: true     # show the "choose your mage" popup to new players
+force-choose: true       # popup reopens if closed without choosing
+pvp: true                # spells can hurt other players
+block-damage: false      # explosions may break blocks
+temporary-blocks: true   # spells that place temporary blocks (ice prison, stone wall)
+world-effects: true      # Wild Growth bone-mealing etc.
+buff-nearby-players: false   # buffs/heals also affect all nearby players, not just teammates
+cooldown-multiplier: 1.0
+multi-staff-min-level: 3     # staff level needed for the 8 staffs in the Multi-Staff recipe
+disabled-worlds: []
+
+resource-pack:
+  url: ""        # direct download link to Arcanum-ResourcePack.zip
+  sha1: ""       # 40 character sha1 of the zip (recommended)
+  required: false
+  prompt: "Arcanum needs its resource pack for custom staffs, scrolls and tomes."

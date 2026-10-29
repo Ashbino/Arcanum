@@ -25,10 +25,11 @@ jobs:
           gradle-version: '8.10.2'
 
       - name: Build plugin jar
+        working-directory: Arcanum
         run: gradle build --no-daemon
 
       - name: Upload plugin jar
         uses: actions/upload-artifact@v4
         with:
           name: Arcanum-plugin
-          path: build/libs/Arcanum-*.jar
+          path: Arcanum/build/libs/Arcanum-*.jar
